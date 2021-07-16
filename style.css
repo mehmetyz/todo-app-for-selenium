@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap");
+
+body {
+  height: calc(100vh);
+  font-family: "Josefin Sans", sans-serif;
+  background: #ec008c;
+}
+.title {
+  margin-top: 100px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 50px;
+  color: rgb(70, 233, 165);
+}
+.app-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.app-block {
+  align-self: center;
+  width: 70%;
+  margin-left: 15%;
+  padding: 16px 16px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container-text {
+  background: #f8d4ea;
+  width: 80%;
+  padding: 6px 6px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  outline: none;
+  font-size: 18px;
+}
+
+.container-addnew {
+  background: #079a5d;
+  outline: none;
+
+  width: 15%;
+  padding: 6px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  float: right;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline-block;
+  font-size: 32px;
+
+  text-align: left;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 12px 12px 12px 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: grid;
+  position: relative;
+  cursor: pointer;
+}
+
+.checked {
+  text-decoration: line-through;
+  background: rgba(87, 0, 0, 0.11);
+}
+.remove {
+  background: #079a5d;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  background-image: url("./delete.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+
+  border-radius: 10px;
+  padding-left: 50px;
+  margin: 0px 3px 0px 0px;
+  height: calc(100% - 1px);
+  transform: translate(0%, -50%);
+}
+
+.remove:hover {
+  background: #03613a;
+
+  background-image: url("./deletehover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  transition-delay: 20ms;
+}
